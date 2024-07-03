@@ -9,11 +9,22 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
-  width: 500px;
+  width: 400px;
   padding: 44px 32px;
   margin: 10px;
   background-color: #dadada;
   border-left: 8px solid orange;
   border-radius: 8px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
 }
