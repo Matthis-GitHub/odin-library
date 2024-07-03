@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.card {
+  width: 500px;
+  padding: 44px 32px;
+  margin: 10px;
+  background-color: #dadada;
+  border-left: 8px solid orange;
+  border-radius: 8px;
+}
