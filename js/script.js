@@ -13,19 +13,20 @@ const inputAuthor = document.querySelector("#author");
 const inputPages = document.querySelector("#pages");
 const btnRead = document.querySelector("#read");
 
-// Constructors
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.displayed = false;
-}
+// Class
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.displayed = false;
+  }
 
-// Prototype functions
-Book.prototype.toggleRead = function () {
-  this.read = !this.read;
-};
+  toggleRead() {
+    this.read = !this.read;
+  }
+}
 
 // Functions
 function addBookToLibrary(title, author, pages, read) {
